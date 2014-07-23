@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "LinkGenerator",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "This extension allows you to generate links such as plain text, HTML tag, Markdown, etc.",
+    "description": "The description of the application"
+  }
+}
