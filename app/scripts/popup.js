@@ -1,10 +1,11 @@
 'use strict';
 
 /*global $:false */
-/*global jQuery:false */
 
-(function(){
-    var url = location.href;
-    var title = $('title').text();
-    $('#links').text(url+'\n'+title);
-})(jQuery);
+$(function() {
+    chrome.tabs.getSelected(null, function(tab) {
+        var url = tab.url;
+        var title = tab.title;
+        $('#links').text(url+'\n'+title);
+    });
+});
